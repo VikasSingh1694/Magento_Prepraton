@@ -798,4 +798,744 @@ Customer can save their credit cards tokens in 'Saved Payment Methods' which are
 
 ***
 
+***
+
+How to set order for a magento collection? (choose 2)
+
+Answer:
+$coll->getSelect()->order('entity_id desc')
+$coll->setOrder('entity_id','desc')
+
+***
+
+How can Customer Groups impact prices? Select all that apply. (choose 3)
+
+Answer:
+Product tiered pricing can be associated with a customer group.
+Catalog Price Rules can be associated with a customer group.
+Cart Price Rules can be associated with a customer group.
+
+***
+
+What change does Magento 2 introduce in regards to creating an account during checkout?
+
+Answer:
+Magento 2 allows a user to create an account after checking out
+
+***
+
+How to insert static block in template file(.phtml)?
+
+Answer:
+echo $this->getLayout()->createBlock('cms/block')->setBlockId('static_block_id')->toHTML();
+
+***
+
+How do you enable Google Analytics eCommerce tracking in Magento?
+
+Answer:
+Store > Configuration > Sales > Google API > Google Analytics: Enable = Yes, Specify Account Number
+
+***
+
+
+Magento 2 includes a responsive theme (Luma). Responsive web design is:
+
+Answer:
+An approach to web design where the same design can be viewed on different devices. Elements are dynamically resized and will rearrange or even be hidden based on the user’s device and resolution. A separate site for mobile users is no longer needed
+
+***
+
+In Magento Enterprise, banners can be displayed based on (select all that apply):
+
+Answer:
+Shopping Cart Price Rules
+Catalog Price Rules
+Customer Segment
+
+***
+
+What can be done with etc/di.xml? (choose 3)
+
+Answer:
+Create a preference for Magento to replace a class lookup or specify a concrete class for an implementation
+Replace constructor arguments
+Create virtual types
+
+***
+
+What can be done with etc/di.xml? (choose 3)
+
+Answer:
+Create a preference for Magento to replace a class lookup or specify a concrete class for an implementation
+Replace constructor arguments
+Create virtual types
+
+***
+
+What framework does Magento 2 use for its REST API?
+
+Answer:
+Swagger
+
+***
+
+What is the address in which tax is calculated?
+
+Answer:
+According to config in admin Sales/Tax/Calculation Settings/Tax Calculation Based On
+
+***
+
+What is omnichannel retailing?
+
+Answer:
+Coordinated and operating across multiple means to access products or services.
+
+***
+
+What is a billing agreement?
+
+Answer:
+An agreement between your customer and the payment service provider that, once in place, allows your customer to checkout without entering payment information for each purchase
+
+***
+
+What is the difference in the effect of calling the invoice capture () method versus the invoice pay () method?
+
+Answer:
+capture () will trigger the payment and pay () will not
+
+***
+
+To change the checkout mode from GUEST to REGISTER and vice versa, which event is needed?
+
+Answer:
+checkout_allow_guest
+
+***
+
+To delete button that is available on the system's form as button Back, Save, Save and Continue, Delete - we use the following way
+
+Answer:
+_removeButton ('name_button');
+
+***
+
+What types of subject does Magento create cache for?(Choose 2)
+
+Answer:
+Block Output HTML
+Module Configuration
+
+***
+
+What is the order to generate 3 events: (1)sales_order_place_after, (2)sales_convert_quote_to_order,(3)sales_order_save_before
+
+Answer:
+2->3->1
+
+***
+
+Where do you specify whether or not a customer can checkout as a guest?
+
+Answer:
+In configuration, Sales > Checkout > Allow Guest (Checkout)
+
+***
+
+What is the Visual Merchandiser?
+
+Answer:
+It is a tool to position products in the category listing.
+
+***
+
+Where can the PayPal express checkout button be displayed (choose 2)
+
+Answer:
+Product page
+Basket
+
+***
+
+When declaring a field in system configuration in Magento ( in file system.xml), which input types need to declare source_model? ( Choose 2)
+
+Answer:
+multiselect
+select
+
+***
+
+What is true for configuration cron "1 1 1 " in Magento?
+
+Answer:
+Implement once a month
+
+***
+
+What Magento classes implement MagentoFrameworkControllerResultInterface (choose 3)
+
+Answer:
+MagentoFrameworkControllerResultRedirect
+MagentoFrameworkControllerResultJson
+MagentoFrameworkViewResultPage
+
+***
+
+What two places can change inventory levels?
+
+Answer:
+QTY field on product edit page and update attributes (from product grid) > advanced inventory tab.
+
+***
+
+What kind of subject is used to provide data, called from layout file?
+
+Answer:
+Block
+
+***
+
+When does an inventory level decrease through the ordering process?
+
+Answer:
+When the order is submitted.
+
+***
+
+When customers translate one word in three following position: table translation, i18n, which position will be displayed?
+
+Answer:
+table translation
+
+***
+
+What type of authentication does Magento 2's API use?
+
+Answer:
+OAuth 1.0a
+
+***
+
+Where do you configure design options in Magento 2?
+
+Answer:
+Content > Design > Configuration
+ 
+***
+
+What key feature was added to Magento 2 CE?
+
+Answer:
+Command-line interface (ex. to help install modules)
+
+***
+
+Which entity collects the grand_total and base_grand_total that the different total models collect?
+
+Answer:
+Sales/quote
+
+***
+
+You have an instance of the ProductCollection. What method do you call to load a subset of attributes for each product?
+
+Answer:
+$productCollection->addAttributeToSelect('attribute_name')
+
+***
+
+Which one of the following class types directly charges a credit card when capturing an invoice in Magento admin?
+
+Answer:
+Payment
+
+***
+
+Which statement correctly describes order state and order status?
+
+Answer:
+The status is a child of the state
+
+***
+
+Which one of the following EAV attribute types may be used for layered navigation in native Magento?
+
+Answer:
+Select
+
+***
+
+Which of following caches are in Magento 2.2 Community? (choose 7)
+
+Answer:
+Merged layout files
+EAV
+Module config
+Database DDL
+Translates
+FPC
+Blocks HTML output
+
+***
+
+Which table to store the relationship data between configurable product and it's simple product?
+
+Answer:
+catalog_product_super_link
+
+***
+
+You have built a customization that changes a template in another 3rd-party module. That change is not taking effect. You check to ensure the template file path is correct—it is. Which two things are the problem? (choose 2)
+
+Answer:
+The layout XML file has the wrong name.
+The module's sequence is improperly configured
+
+***
+
+Which of the following is NOT a native shipping method?
+
+Answer:
+Freight
+
+***
+
+You are evaluating a 3rd-party module and you see some custom functionality that is executed in an observer of the checkout_cart_add_product_complete.It is obvious that this is supposed to run every time a product is added to the cart. Is there a problem?
+
+Answer:
+Yes, problem. This is only triggered when the product is added to the cart on the frontend and in no other case
+
+***
+
+You have been tasked with writing an addition to Magento's CLI that will synchronize the database with an external source. Which directory should you put your new CLI command into?
+
+Answer:
+/Console
+
+***
+
+There are some products, that always were visible. After product import, they disappeared on frontend. What is possible reason they are not shown in categories? (choose 3)
+
+Answer:
+Invisibility in catalog, search
+Website Assignee
+Status disable
+
+***
+
+You are creating an implementation of the grid UI component for a listing of product promotions in the backend. Where do you put it?
+
+Answer:
+/view/adminhtml/ui_component
+
+***
+
+Your client current sells in North America with an English web site but would like to branch out internationally with a Spanish and French website. To maintain one admin panel for all languages and the same theme, you need to set up
+
+Answer:
+One Magento installation, one website, three store views (one per language)
+
+***
+
+Which of the following features does Magento Community NOT have (when compared with Magento Commerce)?
+
+Answer:
+Visual Merchandiser
+
+***
+
+You want to prevent execution of some method. What is the best way?
+
+Answer:
+Add plugin around
+
+***
+
+How to convert attribute value on save (e.g. from 1,2,3 to 1_2_3) taking into account the best practice, in case of invalid input exception needs be thrown?
+
+Answer:
+create backend model
+
+***
+
+How to eliminate performance degradation when using constructor dependency injection?
+
+Answer:
+Use Proxy
+
+***
+
+How to add product attribute that would store a static block reference ?
+
+Answer:
+Add a source_model
+
+***
+
+What is the relationship between block and template (choose 3)
+
+Answer:
+many instances of one class could have many different templates
+many instances of one class could have the same template
+many block instances could have one template
+
+***
+
+Customer use a multi currency on website, but need to have a default price in the order export. What you need to get it in the generated file?
+
+Answer:
+Call method getBaseRowTotal().
+
+***
+
+
+Customer has one website and English, Italy, Spain stores. He wants to add a 20% discount for all products on Spain store:
+
+Answer:
+Customization is required. Magento supports discounting only per website scope
+
+***
+
+What is the minimum requirement to create a CLI command?
+
+Answer:
+Class should have an "execute" method
+Need to declare command by adding an argument to MagentoFrameworkConsoleCommandListInterface
+
+***
+
+Customer has own ERP. Customer wants to get data about invoice in his own ERP. What approach you will choose?
+
+Answer:
+Create observer for event register_invoice_after.
+
+***
+
+How to get path to module directory?
+
+Answer:
+Use MagentoFrameworkModuleDirReader
+
+***
+
+Customer wants to sale only one quantity of each product per one customer. So the one customer can buy 2 different products, but each item couldn't have quantity more then 1.
+
+Answer:
+Set appropriate setting in Configuration/Catalog/Inventory/Product Stock Options/Maximum Qty Allowed in Shopping Cart
+
+***
+
+Which entity types support an EAV functionality?(choose 3)
+
+Answer:
+Product
+Category
+Customer address
+
+***
+
+Customer wants to show a welcome message with a user's name on all pages in the header.
+
+Answer:
+Utilize a private content conception
+
+
+***
+
+You need to add a sensitive configuration setting to store password. Where your customizations will be taking into account security?
+
+Answer:
+Add encryptor in config.xml
+
+***
+
+You need to add a sensitive setting. How to do it? choose 2
+
+Answer:
+Create Encryptor backend model
+Set setting as a obscure type
+
+***
+
+You need to add a sensitive configuration setting to store password. Where your customizations will be taking into account security?
+
+Answer:
+Add encryptor in config.xml
+
+***
+
+What is purpose of the category with ID 0?
+
+Answer:
+used to search categories in code. No other purpose
+
+***
+
+Describe 2 cases when need to create your own block class
+
+Answer:
+You need to create block with non-default caching tags
+If the template is determined dynamically at runtime (different item renderers)
+
+***
+
+You have already implemented custom module, but now you need to add new order attribute, to save the custom data
+
+Answer:
+use UpgradeData.php and MagentoSalesSetupSalesSetup->addAttribute(typeId, code, attrConfig)
+
+***
+
+
+You need to handle url like https://domain1.com/rest/v1/custom. How to do it?
+
+Answer:
+Add configs in webapi.xml
+
+***
+
+you are going to create console command that will use configs but your websites has many stores. How will you resolve config geting:
+
+Answer:
+inject StoreConfigInterface and use STORE_SCOPE
+
+***
+
+
+you have webshope under developement. you are going to upgrade magento to new version. specify steps to do it:
+
+Answer:
+composer require --no-updatecomposer updatebin/magento setup:upgrade
+
+***
+
+your webshop sells cars parts. customer wants to display all manufacturer list on cart page per each product.
+
+Answer:
+Add source model
+
+***
+
+Custom data is saved into database from ERP API. You have a block that renders that info on all pages on front. On some pages it is correct, on some is not. When some changes are done in API, it talks Magento about it. What is wrong?
+
+Answer:
+Block should implements IdentityInterface, return static cache key and clean caches when API talks about changes.
+
+***
+
+
+There is plugin where it a product final price is needed. You expects the $product to be an instance of ProductInterface. But It doesn't have method getFinalPrice. MagentoCatalog module's class realizes that interface and it has a method getFinalPrice().
+
+Answer:
+Add:if (!$product instanceof MagentoCatalogModelProduct) throw new Exception(...)else return $product->getFinalPrice().
+
+***
+
+
+You have a text attribute. Your managers have access to edit products. Sometimes the value of attribute contain extra spaces when is rendered on front. How would you fix it?
+
+Answer:
+add UI component to validate attribute value on beforeSave
+
+***
+
+
+You need to show some additional data when it calls API method on a customerRepository, but not save it in database. What you will do? choose 3
+
+Answer:
+add plugins after* on all methods that return CustomerInterface
+set extensionAttribute to CustomerInterface's instance
+if getExtensionAttribute returns null, create new instance
+
+***
+
+You installed new module, added plugin, but it doesn't work. Class:
+
+final class zz{
+    final protected function a (){};
+    public function authirize (){};
+    private function b (){};
+}
+Answer:
+Plugins doesn't work with final methods and classes.
+
+***
+
+You are building an tool that imports products from an ERP. There are 20 columns of additional information that are associated with each product. This extra information must also be associated with an update time to know when to refresh the data. Keeping maintainability in mind, how do you build this into Magento?
+
+Answer:
+Utilize an extension attribute.
+
+***
+
+What interface should a frontend controllers action implement?
+
+Answer:
+MagentoFrameworkAppActionInterface
+
+***
+
+You have created a new product type, sample, and need to customize how it renders on the shopping cart page.
+
+Keeping maintainability in mind, how do you add a new renderer?
+
+Answer:
+Create the layout file, checkout_cart_item_renderers.xml, reference the checkout.cart.item.renderers block and add a new block with an as="sample" attribute.
+
+***
+
+You are building a new module that needs to utilize a custom URL path like: /maps/{MAP_ID}
+
+What steps do you take to accomplish this?
+
+Answer:
+In di.xml, add your router to the RouterList class' routerList parameter.
+Create a class that extends RouterInterface
+
+***
+
+You need to add a residential / commercial destination selector to the shipping address on the checkout.
+
+What are the steps needed to add this selector?
+
+Answer:
+Create a checkout_index_index.xml file and add the uiComponent details.
+Add new column to the sales_order_address table.
+
+***
+
+You need to create a variation of the 2columns-left page layout. This new layout is named text.
+
+How do you instruct Magento regarding the new layout type?
+
+Answer:
+Create view/frontend/layouts.xml with a node.
+
+***
+
+
+How do you make a new category attribute available to be edited in the admin panel?
+
+Answer:
+Add the new attribute to the category_form.xml uiComponent.
+
+***
+
+What ways are possible to wrap a block with an HTML tag?
+
+Answer:
+Layout XML container
+Add the tag to the template.
+
+***
+
+What only happens in the Production deploy mode?
+
+Answer:
+Errors are only logged, not shown to the user
+
+***
+
+Magento's Product repository uses the getList($filter) method to retrieve a list of products. As you are preparing to retrieve a list of products, you need to specify what products to retrieve. Which of the following classes will help you formulate the filter?
+
+Answer:
+MagentoFrameworkApiSearchCriteriaBuilder
+
+***
+
+
+What additional tools are available in the backend and not in frontend? (choose 3)
+
+Answer:
+Global records search
+URL secret keys
+ACL
+
+***
+
+
+At what URL would you visit the controller listed above You see code in etc/frontend/routes.xml
+
+<route id="mymodule" frontendName="user-subscriptions">
+    <module name="MyCompany_MyModule" />
+</route>
+You have placed a controller in Controller/Index/Subscribe.php At what URL would you visit the controller listed above?
+
+Answer:
+/user-subscriptions/index/subscribe
+
+***
+
+How do you create a new cache type?
+
+Answer:
+Create etc/cache.xml and specify a
+
+***
+
+What files are required for a new theme?
+
+Answer:
+theme.xml
+registration.php
+
+***
+
+A module contains the following files:
+
+ModuleA/
+|-- etc/
+ |-- di.xml
+ |-- frontend/
+   |-- di.xml
+When a visitor is browsing the frontend of the website, what happenes if a similar XML directive is specified in both di.xml files above?
+
+Answer:
+The two di.xml files are merged with etc/frontend/di.xml taking precedence.
+
+***
+
+You need to create a custom price calculator for simple products. You have already creates the new price model.
+
+Keeping simplicity in mind, what additional steps do you take to implement this?
+
+Answer:
+Make your new price model extend MagentoCatalogModelProductTypePrice.
+In your product_types.xml module, reference the simple product type, and set a value for the priceModel attribute.
+
+***
+
+You need to make some modifications to an entity before it is saved to the database. Your tool of choice is a plugin.
+
+What are the requirements for a plugin?
+
+Answer:
+The plugin method must begin with the type of the plugin.
+The plugin class must be specified in di.xml.
+The targeted method or class must not be marked as final.
+
+***
+
+You need to programmatically create a new customer attribute.
+
+What steps are required to do this?
+
+Answer:
+Save the attribute.
+Specify the used_in_forms data for the attribute.
+Create the attribute with MagentoEavSetupEavSetup::addAttribute
+
+***
+
+As you create a controller in Magento's adminhtml area, you must configure it to respond appropriately to the ACL.
+
+Keeping simplicity in mind, what steps do you take to implement this?
+
+Answer:
+Set the value of the ADMIN_RESOURCE constant to be the ACL resource.
+
+***
+
 https://m2exam.decimadigital.com/magento-2-certification-question-list
